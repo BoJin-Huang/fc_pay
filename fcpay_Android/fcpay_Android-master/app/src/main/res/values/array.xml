@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="time_array">
+        <item>中午</item>
+        <item>晚上</item>
+    </array>
+
+    <array name="location_array">
+        <item>資訊電機館</item>
+        <item>商學院</item>
+        <item>行政大樓</item>
+        <item>忠勤樓</item>
+    </array>
+
+    <array name="paymentType_array">
+        <item>陽信 iSunny</item>
+        <item>PayPal</item>
+        <item>Line Pay</item>
+    </array>
+</resources>

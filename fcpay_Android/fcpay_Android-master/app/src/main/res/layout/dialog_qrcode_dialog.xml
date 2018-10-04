@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivCode"
+        android:layout_width="276dp"
+        android:layout_height="266dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/dialogOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivCode"
+        android:layout_alignRight="@+id/ivCode"
+        android:layout_below="@+id/ivCode"
+        android:gravity="center"
+        android:text="orderId"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/dialogTotalOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialogOrderId"
+        android:layout_alignRight="@+id/dialogOrderId"
+        android:layout_below="@+id/dialogOrderId"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:text="orderNumber"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dialogTotalOrderPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialogTotalOrderNumber"
+        android:layout_alignRight="@+id/dialogTotalOrderNumber"
+        android:layout_below="@+id/dialogTotalOrderNumber"
+        android:layout_marginTop="5sp"
+        android:gravity="center"
+        android:text="orderNumber"
+        android:textSize="18sp" />
+
+</RelativeLayout>

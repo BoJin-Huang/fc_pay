@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.root.fcpay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="FcPay"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.HomeViewController">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Order.OrderTable.OrderTableViewController" />
+        <activity android:name=".Order.OrderTable.OrderTableViewModel" />
+        <activity android:name=".Order.OrderDetail.OrderDetailUIViewModel" />
+        <activity android:name=".Order.OrderDetail.OrderDetailUIViewController" />
+        <activity android:name=".Order.PlentyOrder.OrderPlentyViewController" />
+        <activity android:name=".Payment.iSunny.SunnyBankPaymentVM" />
+        <activity android:name=".Payment.iSunny.SunnyBankPaymentVC" />
+        <activity android:name=".Order.OrderRecord.OrderRecordViewModel" />
+        <activity android:name=".Order.OrderRecord.OrderRecordViewController" />
+        <activity android:name=".Profile.UserProfileViewController" />
+        <activity android:name=".Payment.LinePay.LinePayPaymentVM" />
+        <activity android:name=".Payment.LinePay.LinePayPaymentVC" />
+        <activity android:name=".MainMenu.MainMenuController" />
+        <activity android:name=".Payment.PayPal.PayPalVM" />
+        <activity android:name=".Payment.PayPal.PayPalVC"></activity>
+    </application>
+
+</manifest>

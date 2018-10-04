@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/iSunnyAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="帳戶帳號: "
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_iSunnyAC"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iSunnyAC"
+        android:layout_toRightOf="@id/iSunnyAC"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/iSunnyPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iSunnyAC"
+        android:layout_below="@+id/iSunnyAC"
+        android:layout_marginTop="20dp"
+        android:text="帳戶密碼: "
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_iSunnyPW"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iSunnyPW"
+        android:layout_toRightOf="@id/iSunnyPW"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iSunnyPW"
+        android:layout_alignLeft="@+id/iSunnyPW"
+        android:layout_marginTop="20dp"
+        android:text="取餐地點: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:id="@+id/edit_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/location"
+        android:layout_toRightOf="@id/location"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_alignLeft="@+id/location"
+        android:layout_marginTop="20dp"
+        android:text="取餐時間: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:id="@+id/edit_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/time"
+        android:layout_toRightOf="@id/time"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/paymentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"
+        android:layout_alignLeft="@+id/time"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="付款方式: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:id="@+id/edit_paymentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/paymentType"
+        android:layout_toRightOf="@id/paymentType"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/paymentType"
+        android:text="Set" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/set"
+        android:layout_alignBottom="@+id/set"
+        android:layout_below="@+id/paymentType"
+        android:text="Cancel" />
+
+</RelativeLayout>

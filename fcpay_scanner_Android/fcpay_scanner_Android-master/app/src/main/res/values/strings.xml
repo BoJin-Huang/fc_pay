@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">QrcodeScanner</string>
+    <string name="oauthlogin">OAuth登入</string>
+    <string name="buttom_scanner">Scanner</string>
+    <string name="img">img</string>
+</resources>
